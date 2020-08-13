@@ -184,7 +184,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    height: 100vh;
+    height: calc(100vh - 94px);
 }
 
 .contract__top{
@@ -193,7 +193,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    height: 60vh;
+    height: 80vh;
     background-image: url(../images/drew-graham-PVyhz0wmHdo-unsplash.png);
     background-size: cover;
     background-position: center;
@@ -287,9 +287,34 @@
 }
 
 .input--text{
-    width: 73%;
+    width: 96%;
     border: 1px solid #000000;
     height: 22px;
     padding: 3px;
+    margin-bottom: 4px;
+}
+
+.contract__top--form > label{
+    color:#BFB8AE;
+    font-weight: bold;
+    font-size: 9px;
+}
+
+.contract__top--form > label > input{
+    height: 11px;
+    width: 11px;
+}
+
+.contract__top--rectangle > button{
+    background-color: #FF6A00;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border: 3px solid #FFFFFF;
+    border-radius: 4px;
+    width: 75%;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+
 }
 

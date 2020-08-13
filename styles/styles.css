@@ -1,0 +1,175 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+
+.wrapped{
+    width: 100%;
+}
+
+                        /* HEADER */
+.header__container{
+    background-color: #FFFFFF;
+    height: 94px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.phone__container{
+    width: 45.65px;
+    height: 45.65px;
+}
+
+.phone__container > img{
+    width: 100%;
+}
+
+                       /* MAIN HOME */
+
+.main__home{
+    width: 100%;
+    height: calc(100vh - 94px);
+    display: flex;
+    flex-direction: column;
+}
+
+.main__home--contract{
+    height: calc((100vh - 94px) / 2);
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 99, 188, 0.85),rgba(0, 99, 188, 0.85)),  url(../images/brooke-cagle-g1Kr4Ozfoac-unsplash.png); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: baseline;
+    padding-left: 15%; 
+}
+
+.main__home--contract > :first-child{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+}
+
+.main__home--contract > span{
+    text-align: left;
+    padding-right: 15px;
+    padding-left: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: #0063BC;
+    background-color: #FFFFFF;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+
+.main__home--contract > button{
+    width: 47%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: uppercase;
+    background-color: #0063BC;
+    border: solid #FFFFFF 2px;
+    margin-bottom: 13%;
+    margin-top: 5%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.main__home--contract > button > a{
+    color: #FFFFFF;
+    padding: 5px;
+}
+
+.main__home--client{
+    height: calc((100vh - 94px) / 2);
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 99, 188, 0.85),rgba(0, 99, 188, 0.85)), url(../images/rayul-_M6gy9oHgII-unsplash.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.main__home--client > button{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: uppercase;
+    background-color: #FFFFFF ;
+    border: solid #FF6A00 2px;
+    padding: 5px;
+    margin-bottom: 13%;
+}
+
+.main__home--client > button > a{
+    color:#FF6A00;
+    padding: 5px;
+}
+
+
+                      /* Versión tablets 768px */
+@media all and (min-width: 768px){
+    .main__home--contract > span{
+        font-size: 45px;
+    }
+
+    .main__home--contract > button{
+        font-size: 17px;
+        max-width: 319px;
+        width: 35%;
+        height: 58px;
+        border: solid #FFFFFF 3px;
+        margin-bottom: 5%;
+    }
+
+    .main__home--client > button{
+        font-size: 17px;
+        border: solid #FF6A00 3px;
+        height: 58px;
+        margin-bottom: 10%;
+    }
+}
+
+
+                    /* Versión Desktop 1200px */
+@media all and (min-width: 1200px){
+    .main__home{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .main__home--contract{
+        height: calc(100vh - 94px);
+        padding-left: 9%;
+        
+    }
+
+    .main__home--contract > span{
+        font-size: 60px;
+    }
+
+    .main__home--contract > button{
+        margin-bottom: 89px;
+    }
+
+    .main__home--client{
+        height: calc(100vh - 94px);
+
+    }
+
+    .main__home--client > button{
+        margin-bottom: 89px;
+        margin-top: 4%;
+    }
+
+}

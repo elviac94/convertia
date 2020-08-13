@@ -177,3 +177,72 @@
 .hidden{
     display:none;
 }
+                      /* Contract Section */
+.contract__container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+}
+
+.contract__top{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 60vh;
+    background-image: url(../images/drew-graham-PVyhz0wmHdo-unsplash.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.contract__top--text{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.contract__top--text > h2{
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+.contract__top--text > h2 > span{
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.contract__top--text > h3{
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.contract__top--text > h3:nth-child(3){
+    text-transform: none;
+    background-color: #FFFFFF;
+    width: 70%;
+    padding: 5px;
+    box-shadow: 0px 12px 25px #2424241A;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.contract__top--text > button{
+    font-size: 13px;
+    text-transform: uppercase;
+    background-color: #0063BC;
+    color: #FFFFFF;
+    width: 47%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 3px solid #FFFFFF;
+    border-radius: 4px;
+
+}
+

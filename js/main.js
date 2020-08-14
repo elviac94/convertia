@@ -3,6 +3,8 @@ const phoneIcon = document.querySelector('.phone__container');
 const contractButton = document.querySelector('.contract__button');
 const home = document.querySelector('.main__home');
 const contractSection = document.querySelector('.contract__container');
+const smallCircles = document.querySelectorAll('.offer__circle');
+const offerBlocks = document.querySelectorAll('.offers__container--element');
 
 const getContractSection = () =>{
 
@@ -11,5 +13,34 @@ const getContractSection = () =>{
         contractSection.classList.remove('hidden')
     }
 }
+
+const showMoreOptions = (offerBlock)=>{
+    
+    if(!offerBlock.classList.contains('open')){
+    offerBlock.style.cssText='height:120px';
+    offerBlock.classList.add('open')
+    addMoreInfo(offerBlock)
+
+    } else if(offerBlock.classList.contains('open')){
+        offerBlock.style.cssText='height:80px';
+        offerBlock.classList.remove('open')
+    }
+    
+}
+
+const addMoreInfo =(selectedBlock)=>{
+ if(selectedBlock.classList.contains('open')){
+    const moreTextContainer=document.createElement('p');
+    const text= document.createTextNode('TELEFONÍA FIJA: Llamadas ilimitadas MEX / EUA / CAN / Incluye llamadas ilimitadas a celular');
+    moreTextContainer.appendChild(text)
+    selectedBlock.appendChild(moreTextContainer)
+ }
+}
+
+
+offerBlocks.forEach(offerBlock=>{
+    const smallCircle= offerBlock.querySelector('.offer__circle');
+    smallCircle.addEventListener('click',()=>showMoreOptions(offerBlock));
+})
 
 contractButton.addEventListener('click',getContractSection);

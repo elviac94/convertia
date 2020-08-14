@@ -5,6 +5,8 @@ const home = document.querySelector('.main__home');
 const contractSection = document.querySelector('.contract__container');
 const smallCircles = document.querySelectorAll('.offer__circle');
 const offerBlocks = document.querySelectorAll('.offers__container--element');
+const firstPopUp = document.querySelector('.pop-up__container--first');
+const closePopUp = document.querySelector('.pop-up__close');
 
 const getContractSection = () =>{
 
@@ -15,7 +17,7 @@ const getContractSection = () =>{
 }
 
 const showMoreOptions = (offerBlock)=>{
-    
+
     if(!offerBlock.classList.contains('open')){
     offerBlock.style.cssText='height:120px';
     offerBlock.classList.add('open')
@@ -43,4 +45,14 @@ offerBlocks.forEach(offerBlock=>{
     smallCircle.addEventListener('click',()=>showMoreOptions(offerBlock));
 })
 
+const openPopUp=()=>{
+    firstPopUp.classList.remove('hidden');
+}
+
+const toClosePopUp=()=>{
+    firstPopUp.classList.add('hidden')
+}
+
+phoneIcon.addEventListener('click',openPopUp);
+closePopUp.addEventListener('click', toClosePopUp);
 contractButton.addEventListener('click',getContractSection);

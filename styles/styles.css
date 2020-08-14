@@ -418,7 +418,7 @@
                                 /* POP UPs */
 .pop-up__container--first{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     position: absolute;
     top:0px;
     z-index: 2;
@@ -584,6 +584,16 @@
         margin-right: 0px;
     }
 
+    .pop-up__circle {
+    width: 350px;
+    height: 350px;
+    border-radius: 175px
+    }
+
+    .pop-up__circle > h3{
+        font-size: 30px;
+        margin-top: 40px;
+    }
 
 
 }
@@ -703,6 +713,25 @@
 
     .offers__container--third{
         height: 107px;
+    }
+
+    .pop-up__circle {
+        width: 578px;
+        height: 578px;
+        border-radius: 276px
+        }
+
+    .pop-up__circle > h3{
+        font-size: 41px;
+        }
+    
+    .pop-up__circle > h4{
+        font-size: 25px;
+        }
+
+    .pop-up__circle > button{
+        width: 241px;
+        height: 46px;
     }
 
                   

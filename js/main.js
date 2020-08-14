@@ -7,6 +7,7 @@ const smallCircles = document.querySelectorAll('.offer__circle');
 const offerBlocks = document.querySelectorAll('.offers__container--element');
 const firstPopUp = document.querySelector('.pop-up__container--first');
 const closePopUp = document.querySelector('.pop-up__close');
+const bodyOver = document.querySelector('body');
 
 const getContractSection = () =>{
 
@@ -47,10 +48,16 @@ offerBlocks.forEach(offerBlock=>{
 
 const openPopUp=()=>{
     firstPopUp.classList.remove('hidden');
+    contractSection.style.cssText='overflow-y: hidden';
+    home.style.cssText='overflow-y: hidden';
+    bodyOver.style.cssText='overflow-y: hidden';
 }
 
 const toClosePopUp=()=>{
-    firstPopUp.classList.add('hidden')
+    firstPopUp.classList.add('hidden');
+    contractSection.style.cssText='overflow-y: none';
+    home.style.cssText='overflow-y: none';
+    bodyOver.style.cssText='overflow-y: none';
 }
 
 phoneIcon.addEventListener('click',openPopUp);

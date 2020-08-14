@@ -10,6 +10,8 @@ const closePopUp = document.querySelector('.pop-up__close');
 const bodyOver = document.querySelector('body');
 const locationIcon = document.querySelector('.location__container');
 const variableText = document.querySelector('.variable__text');
+const clientButton = document.querySelector('.client__button');
+const clientSection = document.querySelector('.client__container--section');
 
 const getContractSection = () =>{
 
@@ -69,7 +71,18 @@ const toClosePopUp=()=>{
     bodyOver.style.cssText='overflow-y: none';
 }
 
+const getClientSection =()=>{
+
+    if(!home.classList.contains('hidden')){
+        home.classList.add('hidden');
+        clientSection.classList.remove('hidden');
+        locationIcon.classList.remove('hidden');
+    }
+
+}
+
 phoneIcon.addEventListener('click',() => openPopUp('phone'));
 locationIcon.addEventListener('click',()=> openPopUp('location'));
+clientButton.addEventListener('click', getClientSection);
 closePopUp.addEventListener('click', toClosePopUp);
 contractButton.addEventListener('click',getContractSection);

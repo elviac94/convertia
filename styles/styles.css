@@ -495,6 +495,87 @@
     right: 65px;
 }
 
+.client__container--section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+    min-height: calc(100vh - 94px);
+    height: 1000px;
+}
+
+.client__container--hero{
+    background-image: linear-gradient(rgba(0,0,0,0.37),rgba(0,0,0,0.37)), url(../images/edu-lauton-TyQ-0lPp6e4-unsplash.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+}
+
+.client__container--hero > h1{
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.client__container--hero > h2{
+    font-family: 'Roboto', sans-serif;
+}
+
+.client__container--hero > button{
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF; 
+    border-radius: 4px;
+    background-color: #0063BC;
+    height: 30px;
+    text-transform: uppercase;
+    width: 150px;
+}
+
+.client__container--info{
+    text-align: center;
+    width: 67%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.client__text{
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: black;
+}
+
+.client__text > span{
+    color:#0063BC;
+    font-weight: bold;
+}
+
+.client__icons{
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.client__icons > .icon{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.client__icons > .icon > div > img{
+    width: 50px;
+    height: 50px;
+}
+
 
 
                       /* Versión tablets 768px */
@@ -594,6 +675,27 @@
         font-size: 30px;
         margin-top: 40px;
         max-width: 300px;
+    }
+
+    .client__container--section{
+        height: 500px;
+    }
+
+    .client__icons{
+        min-height: 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .client__icons > .icon{
+        width: 20%;
+    } 
+
+    .client__icons > .icon > h5{
+        width: 18%;
     }
 
 
